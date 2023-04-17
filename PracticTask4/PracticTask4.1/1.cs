@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracticTask4
+namespace PracticTask4._1
 {
     internal class Program
     {
@@ -26,7 +26,7 @@ namespace PracticTask4
         }
         static void DisplayWords(string[] words)
         {
-            Console.WriteLine("Слова в предложении:");
+            Console.WriteLine("Слова в предложении: ");
             foreach (var word in words)
             {
                 Console.WriteLine(word);
