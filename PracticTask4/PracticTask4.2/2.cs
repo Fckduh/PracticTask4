@@ -10,23 +10,23 @@ namespace PracticTask4._2
     {
             static void Main(string[] args)
             {
-                string inputPhrase = Console.ReadLine();
-                string reversedPhrase = ReverseWords(inputPhrase);
+                string input = Console.ReadLine();
+                string reverse = ReverseWords(input);
                 Console.WriteLine("Разделение и обратная последовательность слов: ");
-                Console.WriteLine(reversedPhrase);
+                Console.WriteLine(reverse);
                 Console.ReadKey();
             }
-            static string ReverseWords(string inputPhrase)
+            static string ReverseWords(string input)
             {
-                string[] words = SplitWords(inputPhrase);
+                string[] words = SplitWords(input);
 
                 Array.Reverse(words);
 
                 return string.Join(" ", words);
             }
-            static string[] SplitWords(string inputPhrase)
+            static string[] SplitWords(string input)
             {
-                return inputPhrase.Split(' ');
+                return input.Split(' ');
             }
     }
 }
